@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/lib/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link href="css/dataTables.min.css" type="text/css" rel="stylesheet">
+    <link href="css/dataTables_themeroller.min.css" type="text/css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid" id="body-container">
+<div id="nav">
+    <div class="logo">
+        <a class="brand"></a>
+    </div>
+    <div class="menus">
+        <div id="menu">
+            <ul id="main-nav">
+
+            </ul>
+        </div>
+        <div id="sidebar" class="navbar-collapse collapse sidebar">
+
+
+        </div>
+    </div> <!-- /.nav-collapse -->
+    <div class="userInfo">
+        <i class="glyphicon glyphicon-user"></i><a class="userName">管理员</a>
+    </div>
+</div>
+<div id="content">
+    <!--	主内容	-->
+    <div class="mainContent">
+        <div class="main">
+            <div class="mainview">
+            </div>
+        </div> <!-- /.main -->
+    </div><!--/.mainContent-->
+</div> <!-- /#content -->
+
+<div id="footer">
+
+</div>
+</div>
+</body>
+<script data-main="script/main" src="script/libs/require.js"></script>
+<!-------------- 顶部栏模板 --------------->
+<script type="text/template" id="nav_temp">
+    <% _.each(menus,function(value,index){ %>
+    <li name=<%=value.name%>>
+        <a href=#app/<%=value.name%> >
+            <i class="glyphicon glyphicon-leaf"></i>
+            <span><%=value.title%></span>
+        </a>
+    </li>
+    <% }) %>
+</script>
+<!-------------- 二级菜单模板 --------------->
+<script type="text/template" id="sidebar_temp">
+    <ul name=<%=key%> class="sidebar-menu">
+    <% _.each(menus,function(value){ %>
+        <li name=<%=value.name%> class="sub">
+            <a href=#app/<%=key%>/<%=value.name%> >
+               <span><%=value.title%></span>
+            </a>
+        </li>
+    <% }) %>
+    </ul>
+</script>
+</html>

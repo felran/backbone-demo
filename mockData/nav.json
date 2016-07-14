@@ -1,0 +1,40 @@
+[{
+  "name":"menu1",
+  "title":"导航菜单1",
+  "children":[{
+    "title":"菜单1-子菜单1",
+    "name":"sub1"
+    },{
+    "title":"菜单1-子菜单2",
+    "name":"sub2"
+  },{
+    "title":"菜单1-子菜单3",
+    "name":"sub3"
+  }]
+},{
+  "name":"menu2",
+  "title":"导航菜单2",
+  "children":[{
+    "name":"sub1",
+    "title":"菜单2-子菜单1"
+  },{
+    "title":"菜单2-子菜单2",
+    "name":"sub2"
+  },{"title":"菜单2-子菜单3",
+    "name":"sub3"
+  }]
+},{
+  "name":"menu3",
+  "title":"导航菜单3",
+  "children":[{
+    "title":"菜单3-子菜单1",
+    "name":"sub1"
+  },{
+    "title":"菜单3-子菜单2",
+    "name":"sub2"
+  },{
+    "title":"菜单3-子菜单3",
+    "name":"sub3"
+  }
+  ]
+}]

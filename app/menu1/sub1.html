@@ -1,0 +1,37 @@
+<div class="panel">
+    <div class="title"><%=title%></div>
+    <form id = "toolbar" style="padding:15px 10px;">
+        <button type='button' class='mybtn' id='addData'><i class='glyphicon glyphicon-plus'></i>创建</button>
+        <button type='button' class='mybtn btn_warning' id='refreshTable'><i class='glyphicon glyphicon-refresh'></i>刷新</button>
+    </form>
+    <table id="table" style="" class="myTable">
+    </table>
+    <div id="dialog" class="hide" data-title="弹窗">
+        <form style='padding:5px 0 30px' class="popup-form lg">
+            <div>
+                <label>性别：</label>
+                <select  name='gender'>
+                    <option value="1" selected>男</option>
+                    <option value="0">女</option>
+                </select>
+            </div>
+            <div>
+                <label>名称：</label>
+                <input name='name' />
+            </div>
+            <div>
+                <label>颜色：</label>
+                <input name='color' type="color" value="#000"/>
+            </div>
+            <div>
+                <label>内容：</label>
+                <input name='text' />
+            </div>
+            <div>
+                <label>组织：</label>
+                <input name='groupId' />
+            </div>
+            <div style="margin-top:15px;"><label>&nbsp;</label><span style='width:auto;margin-left:5.5%;text-align:left;'><button type='button' class='mybtn btn_success' id='createBtn'><i class='glyphicon glyphicon-plus'></i>创建</button></span><span  style='width:auto;margin-right:3%;float:right;text-align:right;'><button class='mybtn btn_warning' type='button' id='resetBtn'><i class='glyphicon glyphicon-refresh'></i>重置</button></span></div>
+        </form>
+    </div>
+</div>
